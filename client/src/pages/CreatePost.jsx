@@ -20,7 +20,7 @@ const CreatePost = () => {
             try {
                 setGeneratingImg(true);
                 const result = await fetch(
-                    'http://localhost:8080/api/v1/delta/',
+                    'https://delta-ai.onrender.com/api/v1/delta/',
                     {
                         method: 'POST',
                         headers: {
@@ -51,7 +51,7 @@ const CreatePost = () => {
 
             try {
                 const response = await fetch(
-                    'http://localhost:8080/api/v1/post/',
+                    'https://delta-ai.onrender.com/api/v1/post/',
                     {
                         method: 'POST',
                         headers: {
